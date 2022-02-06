@@ -1,0 +1,23 @@
+{
+  "name": "@jacobfitzp/mazedigger",
+  "version": "1.0.0",
+  "description": "Random maze generator",
+  "broswer": "./dist/maze.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobFitzp/MazeDigger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacobFitzp/MazeDigger/issues"
+  },
+  "homepage": "https://github.com/JacobFitzp/MazeDigger#readme",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}

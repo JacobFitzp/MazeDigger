@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Maze Generator</title>
+
+		<style>
+
+			* {
+				font-family: arial,serif;
+			}
+
+			#maze-canvas {
+				width: 525px;
+				height: 525px;
+				margin: 0 auto;
+				display: block;
+				background-color: red;
+				padding: 10px;
+			}
+
+			.control-form {
+                width: 525px;
+                margin: 20px auto;
+                display: block;
+			}
+
+			label {
+                display: block;
+				margin-bottom: 5px;
+			}
+
+			input {
+                width: 470px;
+				display: block;
+				padding: 10px;
+			}
+
+			button {
+				margin-top: 10px;
+				padding: 10px;
+				text-align: center;
+				width: 100%;
+				border: none;
+				background-color: #ccc;
+				border-radius: 5px;
+			}
+
+			button:hover {
+				background-color: #8d8d8d;
+                color: #fff;
+				transition: 0.2s;
+			}
+
+		</style>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+		<script src="dist/app.min.js"></script>
+
+	</head>
+	<body>
+		<canvas id="maze-canvas"></canvas>
+		<div class="control-form">
+			<fieldset>
+				<label for="maze-size">Size</label>
+				<input id="maze-size" type="number" name="size" value="20">
+				<button id="maze-generate">Generate</button>
+			</fieldset>
+		</div>
+	</body>
+</html>
